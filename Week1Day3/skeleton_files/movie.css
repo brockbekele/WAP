@@ -1,0 +1,129 @@
+body {
+    background-image: url(./background.png);
+    font-size: 8pt ;
+    font-family: Verdana, Tahoma, sans-serif;
+
+}
+#bannerHead{
+    position: absolute; 
+    top: 0px;
+    right: 0px;
+    left:0px;
+    text-align: center;
+    background-image: url(./bannerbg.png);
+    background-repeat: repeat;
+      
+
+}
+
+#headingTitle{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-shadow: 3px 3px #999999;
+    position: relative;  
+    
+}
+
+.overallContainer{
+    max-width: 800px;
+    border: 4px solid gray;
+    border-radius: 20px;
+    position: relative;
+    overflow: auto;
+    margin: auto;
+    
+}
+#headerRotten{
+    background-image: url(./rbg.png);
+    background-repeat: repeat-x;
+    position: relative;
+    margin-top: 0;
+    overflow: auto;
+}
+#columnTop{
+    max-width: 550px;
+    display:inline-block;
+    padding: 0;
+    /* line-height: 0.0; */
+
+}
+
+#imgRotten{
+    vertical-align: bottom;
+}
+#reviewTxt{
+    display: inline;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    
+}
+
+#imgOver{
+    background-color: #A2B964;
+    float: right;
+    overflow: auto;
+    width: 250px;
+}
+dt {
+    margin-top: 10pt;
+    font-weight: bold;
+}
+
+dl, .unorderist{
+    margin-top: 10pt;
+   
+}
+#imgOver ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+ 
+.preview{
+    border: 2px solid gray;
+    border-radius: 10px; 
+    background-color: #E8DC9B;
+    overflow: hidden; 
+    padding: 8px;
+    text-align:justify;
+    
+}
+
+.leftColumn{
+    margin-left:2%;
+    margin-right:2%;
+    float: left;
+    width: 47%; 
+
+   
+}
+.rightColumn{
+    margin-right:2%;
+    
+    float: right;
+    width: 47%; 
+}
+    
+    
+
+    
+
+.spanFormat{
+    font-style: italic;
+}
+
+.pimage{
+    line-height:100%;
+}
+#footerPage{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #A2B964;
+    height: 20px;
+    text-align: center;
+    bottom: 0;
+}   
