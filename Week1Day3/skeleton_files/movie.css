@@ -90,6 +90,7 @@ dl, .unorderist{
     overflow: hidden; 
     padding: 8px;
     text-align:justify;
+    font-weight: bold;
     
 }
 
@@ -117,13 +118,27 @@ dl, .unorderist{
 }
 
 .pimage{
-    line-height:100%;
+        margin-right:5px;
+        float:left;
+    }
+#footerDiv{
+    clear: both;
 }
 #footerPage{
-    padding-bottom: 5px;
-    padding-top: 5px;
+    bottom: 0;
     background-color: #A2B964;
     height: 20px;
-    text-align: center;
-    bottom: 0;
-}   
+    text-align:center;
+    padding-top: 5px;
+    margin-bottom: 0px;
+   
+}
+
+#validators{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+   
+    opacity: 50%;
+   
+}
