@@ -1,0 +1,16 @@
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: #f2f2f2;  
+    padding: 5px 20px 15px 20px;   
+}
+fieldset {
+    border: solid 2px gray !important;
+    padding: 0 10px 10px 10px;
+    border-bottom: none;
+    /*background-color: #f9f9f9;*/
+}
+#validation {
+    float: right;
+    margin: 10px 0 10px 5px;
+}
