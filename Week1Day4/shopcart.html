@@ -24,16 +24,16 @@
     <div class="container">
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#persondetial"> Detail Information Page</a>
+                <a class="nav-link active" data-toggle="tab" href="#personaldetial"> Detail Information Page</a>
             </li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-            <div id="persondetial" class="container tab-pane active"><br>
+            <div id="personaldetial" class="container tab-pane active"><br>
                 <fieldset>
                     <legend> Personal details</legend>
-                    <form action="#" name="persondetial" id="persondetial" method="post">
+                    <form action="#" name="detail" id="persondetial" method="post">
                         <div class="form-group">
 
                             <label for="firstname">First Name</label>
@@ -80,20 +80,20 @@
                         </div>
                         <div class="form-group">
                             <label for="zip">zip Code</label>
-                            <input type="text" id="zip" name="zip" palceholder="zipcode"   placeholder= "zip(xxxxx)" class="form-control"
+                            <input type="text" id="zip" name="zip"  placeholder= "zip(xxxxx)" class="form-control"
                                 pattern="[0-9]{5}" title="5 digit usa zip code" required>
                         </div>
                         <div class="form-group">
-                            <label for="Country">Country</label>
+                            <label for="country">Country</label>
                             <input type="text" id="country" name="zip" placeholder="Country" class="form-control"
                                required>
                         </div>
-                </div>
+                 </div> 
                 <div class="col-sm-6">
                      <h4> Payment Info </h4> 
                     <div class="form-group">
                         <label for="cname">Name on Card</label>
-                        <input type="text" id="cname" name="cardname" placeholder="name" class="form-control" >
+                        <input type="text" id="cname" name="cardname" placeholder="name" class="form-control" required >
                     </div>
                     <div class="form-group">
                         <label for="ccnum">Credit card number</label>
@@ -116,7 +116,7 @@
                     <div class="form-group">
 
                         <label for="expyear">Expiration Year</label>
-                        <input type="year" id="expyear" name="expyear" placeholder="xxxx" class="form-control">
+                        <input type="text" id="expyear" name="expyear" placeholder="xxxx" class="form-control" pattern="[0-9]{4}" title= "enter correct year format">
                     </div>
                     <div class="form-group">
                         <label for="cvv">CVV</label>
@@ -145,6 +145,7 @@
                         <img class="img2" src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="CSS validator"></a>
                         
             </div>
+        </div>
         </div>
 </body>
 
