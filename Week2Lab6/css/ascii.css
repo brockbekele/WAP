@@ -1,0 +1,39 @@
+body{
+    background-color: #CCCCFF;
+    font-weight: bold;
+    font-size: 14pt;
+}
+h1{
+    font-size: 34pt;
+    font-weight: bold;
+    text-align: center;
+    margin:0px;
+}
+#textbox{
+    /* text-align: center; */
+    height: 400px; 
+    width: 90%;
+    font-family: monospace;
+    font-size:  12pt;
+}
+.mainContainer{
+    max-width:990px;
+    overflow: hidden; 
+    margin:0 auto;
+    clear: both;
+
+    
+}
+.validator
+{
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    text-align: left;
+}
+   
+
+fieldset{
+border: 5px solid black;;
+display: inline-block;
+}

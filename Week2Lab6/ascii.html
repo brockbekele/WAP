@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/ascii.css" tyepe="text/css" rel="stylesheet">
+    <title>Animation CS472</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+
+        <h1> CS472: ASCII Animation Viewer</h1>
+
+        <textarea id="textbox" cols="80" rows="20"></textarea>
+        <fieldset>
+            <legend>Play Controls</legend>
+            <button id="play">Play</button>
+            <button id="stop" disabled>Stop</button>
+        </fieldset>
+        <fieldset>
+            <legend>Animation</legend>
+            <select id="animation_tp">
+                <option value="BLANK">Blank</option>
+                <option value="BIKE">Bike</option>
+                <option value="Dive">Dive</option>
+                <option value="EXERCISE">Exercise</option>
+                <option value="Juggler">Juggler</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Size</legend>
+            <select id="sizeid">
+                <option value="12pt">Medium</option>
+                <option value="7pt">Tiny</option>
+                <option value="10pt">Small</option>
+                <option value="16pt">Large</option>
+                <option value="24pt">Extra Large</option>
+                <option value="32pt">XXL</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Speed</legend>
+            <label for="speedselc">Turbo</label>
+            <input type="checkbox" id="speedselc">
+        </fieldset>
+        <div class="validator">
+            <a href="https://validator.w3.org/check/referer">
+                <img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="html validator" />
+            </a> <br />
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img class="img2" src="http://mumstudents.org/cs472/2014-09/images/w3c-css.png" alt="CSS validator"></a>
+        </div>
+    </div>
+</body>
+<script src="ascii.js" type ="text/javascript"></script>
+<script src="animations.js" type= "text/javascript"></script>
+
+</html>
