@@ -5,6 +5,8 @@
     const playButton = document.getElementById("play");
     const stopButton = document.getElementById("stop");
     const anim = document.getElementById("animation_tp");
+    const turboSelector = document.getElementById("speedselc");
+    let speed = 250;
     let timer = null;
     let framePl;
     window.onload = function () {
@@ -12,6 +14,7 @@
         document.getElementById("sizeid").onchange = changeText;
         document.getElementById("play").onclick = playAnimation;
         document.getElementById("stop").onclick = stopAnimate;
+        turboSelector.onchange = speedoSelect;
     };
     function animationSelect() {
 
@@ -22,6 +25,19 @@
         viewText.innerHTML = ANIMATIONS[selected];
 
     }
+    function speedoSelect() {
+        if (turboSelector.checked) {
+            speed = 50;
+        }
+        else {
+            speed = 250;
+        }
+        if (!stopButton.disabled) {
+            clearInterval(timer);
+            timer = setInterval(functime, speed);
+        }
+    };
+
     function changeText() {
         const chtxt = document.getElementById("sizeid");
         let valchtxt = chtxt.options[chtxt.selectedIndex].value;
@@ -39,13 +55,7 @@
             stopButton.disabled = false;
             anim.disabled = true;
             framePl = ANIMATIONS[valAnimtype].split("=====\n");
-            let millsec;
-            if (document.getElementById("speedselc").checked) {
-                millsec = 50;
-            } else {
-                millsec = 250;
-            }
-            timer = setInterval(functime, millsec);
+            timer = setInterval(functime, speed);
         }
     }
 
@@ -64,9 +74,6 @@
         anim.disabled = false;
 
     }
-
-
-
 
 
 })();
