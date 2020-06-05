@@ -1,6 +1,19 @@
-function clickButton() {
+
+(function (){ 
+     "use strict"
+    const checkBx = document.getElementById("checkid");
     const areaTex = document.getElementById("textid");
     const text = document.getElementById("butid");
+ 
+    window.onload = function (){
+         checkBx.onchange = checkBox;
+         text.onclick = callInterval;
+     };
+    
+
+    
+function clickButton() {
+    
     areaTex.innerHTML = areaTex.value;
     const fsize= window.getComputedStyle(areaTex,null).getPropertyValue('font-size');
     const style =parseFloat(fsize) * 0.75 + 2;
@@ -15,8 +28,7 @@ function callInterval(){
     }
 }
 function checkBox() {
-    const checkBx = document.getElementById("checkid");
-    const areaTex = document.getElementById("textid");
+    
 
     areaTex.innerHTML = areaTex.value;
     if (checkBx.checked == true) {
@@ -36,3 +48,4 @@ function checkBox() {
 
 }
 
+})();
