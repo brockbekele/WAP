@@ -1,4 +1,12 @@
+//  var init = function() {
+//     var puzzleArea = document.getElementById('puzzlearea');
+//     var divs = puzzleArea.getElementsByTagName("div");
+//         // calculate x and y for this piece
+//         var x = ((i % 4) * 100) ;
+//         var y = (Math.floor(i / 4) * 100) ;
 
+
+// init();
 $(function () {
     "use strict";
 
@@ -31,7 +39,7 @@ $(function () {
         }
     };
 
-    //start when mouse hovers on of tiles/ block
+    //start when mouse hovers on of tiles
     $(".puzzlepiece").hover(function () {
         if (isMovable($(this))) {
             $(this).addClass("movablepiece");
