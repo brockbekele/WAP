@@ -2,6 +2,7 @@ var START = 0;
 var ballVelocity = 0;
 
 $(function() {
+	"use stirct"
 	$("#ball").css({
 		'top': '0px',
 		'left': $(window).width() / 2 + 'px'

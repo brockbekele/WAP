@@ -1,4 +1,5 @@
 $(function () {
+    "use stirct"
     prepopulate();
     $("#add").click(populate);
     $("#kill").click(kill);

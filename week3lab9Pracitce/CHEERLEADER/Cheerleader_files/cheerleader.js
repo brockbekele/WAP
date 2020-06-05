@@ -1,6 +1,7 @@
 
 
 $(function() {
+	"use stirct"
 	$(document).keypress(cheer);
 });
 
